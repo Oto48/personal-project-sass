@@ -1,0 +1,155 @@
+.component-8{
+    width: 100%;
+    height: 1435px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    margin-top: 100px;
+    background: #F9FAFB;
+}
+
+.component-8 .head{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+
+.component-8 .head p:first-child{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #2C3E50;
+    margin-bottom: 0;
+}
+
+.component-8 .head p:last-child{
+    color: #A1B1BC;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.component-8 .grid-container {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 540px 540px;
+    gap: 2%;
+    justify-content: center;
+}
+
+.component-8 .grid-item {
+    background-color: white;
+    border: 1px solid #ECF0F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.component-8 .box{
+    width: 100%;
+    height: 270px;
+    background: transparent;
+    border-bottom: 1px solid #ECF0F1;
+}
+
+.component-8 .person{
+    width: 90%;
+    height: 70px;
+    border-bottom: 1px solid #ECF0F1;
+}
+
+.component-8 .person p{
+    margin-top: 5px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.component-8 .person p:first-child{
+    color: #2C3E50;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.component-8 .person p:last-child{
+    color: #A1B1BC;
+    font-size: 14px;
+}
+
+.component-8 .footer{
+    width: 90%;
+}
+
+.component-8 .footer p{
+    font-size: 14px;
+    color: #A1B1BC;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.component-8 .footer button{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #2C3E50;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.component-8 .footer button:hover{
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #1ABC9C;
+    border-color: #1ABC9C;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+    .component-8 .grid-container {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 540px 540px;
+        gap: 2%;
+        justify-content: center;
+    }
+    .component-8 .person p:first-child{
+        font-size: 14px;
+    }
+    .component-8 .footer p{
+        line-height: 21px;
+    }
+    .component-8 .footer button{
+        height: 35px;
+    }
+    
+}
+
+@media only screen and (max-width: 1025px) {
+    .component-8{
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .component-8 .grid-container {
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 520px 520px 520px;
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .component-8 .grid-container {
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+    }
+    .component-8 .footer button{
+        margin-bottom: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .component-8 .head p:first-child{
+        font-size: 20px;
+    }
+    .component-8 .head p:last-child{
+        font-size: 14px;
+    }
+}

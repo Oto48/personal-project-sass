@@ -1,0 +1,93 @@
+.component-9{
+    height: 600px;
+    background: #2C3E50;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.component-9 .color{
+    background: rgba(34, 37, 51, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.component-9 .text{
+    padding-top: 185px;
+    width: 1170px;
+    margin: auto;
+    line-height: 40px;
+}
+
+.component-9 .text p:first-child{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.component-9 .text p:last-child{
+    font-size: 16px;
+    word-spacing: 15px;
+}
+
+.component-9 .button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.component-9 .button:hover{
+    cursor: pointer;
+    background: #1ADFB8;
+}
+
+.component-9 .buttons{
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .component-9 .text{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .component-9{
+        height: 500px;
+    }
+    .component-9 .text{
+        line-height: 30px;
+        padding-top: 120px;
+    }
+    .component-9 .text p:first-child{
+        font-size: 18px;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+    .component-9{
+        height: auto;
+    }
+    .component-9 .text{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .component-9 .text p:first-child{
+        font-size: 15px;
+    }
+    .component-9 .text p:last-child{
+        font-size: 14px;
+    } 
+}

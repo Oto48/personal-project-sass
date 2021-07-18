@@ -1,0 +1,68 @@
+.component-3{
+    display: flex;
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 70px;
+    justify-content: center;
+}
+
+.component-3 img{
+    margin-top: 30px;
+}
+
+.component-3 p:first-child{
+    font-weight: 900;
+    font-size: 30px;
+    color: #2C3E50;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.component-3 p:not(:first-child){
+    margin-bottom: 25px;
+    color: #A1B1BC;
+    line-height: 24px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.component-3 div:last-child{
+    width: 577px;
+}
+
+.component-3 button{
+    width: 211px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #2C3E50;
+    border-radius: 5px;
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1280px) {
+
+    .component-3 div:last-child{
+        width: 420px;
+    }
+
+}
+
+@media only screen and (max-width: 1025px) {
+    .component-3{
+        flex-direction: column;
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+
+    .component-3 img{
+        width: 50%;
+    }
+
+    .component-3 div:last-child{
+        width: 80%;
+        text-align: center;
+    }
+
+}

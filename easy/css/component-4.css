@@ -1,0 +1,102 @@
+.component-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.component-4 div{
+    height: 360px;
+    font-size: 14px;
+    color: white;
+    padding: 55px 80px;
+    line-height: 24px;
+}
+
+.component-4 p:first-child{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.component-4 button{
+    width: 170px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.component-4 div:first-child{
+    background: #4E459A;
+}
+
+.component-4 div:nth-child(2){
+    background: #63D8FF;
+}
+
+.component-4 div:last-child{
+    background: #E36968;
+}
+
+@media only screen and (max-width: 1480px) {
+
+    .component-4 div{
+        padding: 55px 50px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1280px) {
+
+    .component-4 div{
+        height: 320px;
+        font-size: 14px;
+        padding: 40px 25px;
+        line-height: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 1025px) {
+    .component-4{
+        grid-template-columns: 1fr 1fr;
+    }
+    .component-4 div{
+        height: 360px;
+        font-size: 14px;
+        padding: 10px 30px;
+        line-height: 20px;
+    }
+
+    .component-4 .item{
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .component-4{
+        grid-template-columns: 1fr;
+    }
+    .component-4 div{
+        height: 280px;
+    }
+    .component-4 .item{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .component-4 div{
+        height: auto;
+    }
+    .component-4 .item{
+        height: auto;
+    }
+}
