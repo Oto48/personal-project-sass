@@ -1,11 +1,331 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body,html{
-    width: 100%;
-    height: 100%;
+
+body, html {
+  width: 100%;
+  height: 100%;
 }
-body{
+
+body {
+  margin: 0;
+  font-family: Lato, Raleway, Playfair Display;
+}
+
+.component-1 {
+  width: 100%;
+  height: 100px;
+  background: #999999;
+}
+.component-1 .container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 37, 51, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component-1 .container .logo {
+  align-items: center;
+  width: 154px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.component-1 .container .logo p {
+  color: white;
+  font-size: 35.69px;
+}
+.component-1 .container .logo span {
+  font-weight: 700;
+}
+.component-1 .container .nav-logo {
+  display: flex;
+  width: 76px;
+  justify-content: space-between;
+}
+.component-1 .container img {
+  cursor: pointer;
+}
+.component-1 .container ul {
+  display: flex;
+  color: white;
+  list-style-type: none;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  width: 924px;
+  font-size: 15.86;
+}
+.component-1 .container ul li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.component-1 .container ul li:hover {
+  cursor: pointer;
+  border-top: 5px solid #1ABC9C;
+  color: #1ABC9C;
+}
+@media only screen and (max-width: 1280px) {
+  .component-1 ul {
+    width: 800px;
+  }
+  .component-1 ul .logo {
+    width: 130px;
+  }
+  .component-1 ul .logo p {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-1 ul {
+    width: 700px;
+  }
+  .component-1 ul .nav-logo {
+    width: 66px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-1 .container {
+    justify-content: space-between;
+  }
+  .component-1 .container ul {
+    justify-content: space-between;
+    margin: 0 10px;
+    font-size: 12px;
+    padding: 0;
+  }
+  .component-1 .container .logo {
+    width: 100px;
+  }
+  .component-1 .container .logo p {
+    font-size: 19px;
+  }
+  .component-1 .container .logo img {
+    width: 25px;
+  }
+  .component-1 .container .nav-logo {
+    width: 50px;
+  }
+  .component-1 .container .nav-logo img {
+    width: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .component-1 {
+    height: 50px;
+  }
+  .component-1 .container {
+    justify-content: space-between;
+    position: relative;
+  }
+  .component-1 .container ul {
+    justify-content: space-between;
+    margin: 0 5px;
+    font-size: 7px;
+    padding: 0;
+  }
+  .component-1 .container ul li {
+    padding-top: 10px;
+    align-items: flex-start;
+  }
+  .component-1 .container ul li:hover {
+    border-top: 2px solid #1ABC9C;
+  }
+  .component-1 .container .logo {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 50px;
+  }
+  .component-1 .container .logo img {
+    width: 15px;
+  }
+  .component-1 .container .logo p {
     margin: 0;
-    font-family: Lato, Raleway, Playfair Display;
+    font-size: 10px;
+  }
+  .component-1 .container .nav-logo {
+    width: 40px;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
+  .component-1 .container .nav-logo img {
+    width: 10px;
+  }
 }
+
+.component-2 {
+  width: 100%;
+  height: 980px;
+  background: #999999;
+}
+.component-2 .container {
+  padding: 0 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgba(26, 28, 39, 0.7);
+}
+.component-2 .container .text {
+  margin: 0;
+  text-align: center;
+}
+.component-2 .container .text span {
+  color: #03FBCA;
+}
+.component-2 .container .text p {
+  color: white;
+  margin: 0;
+}
+.component-2 .container .text p:first-child {
+  font-weight: 900;
+  font-size: 90px;
+}
+.component-2 .container .text p:last-child {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.component-2 .container .arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 120px;
+}
+.component-2 .container .arrows i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #03FBCA;
+  font-size: 24px;
+  color: #2C3E50;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.component-2 .container img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 30px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1280px) {
+  .component-2 {
+    height: 880px;
+  }
+  .component-2 .text p:first-child {
+    font-weight: 900;
+    font-size: 80px;
+  }
+  .component-2 .text p:last-child {
+    font-size: 20px;
+  }
+  .component-2 .arrows i {
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-2 {
+    height: 780px;
+  }
+  .component-2 .text p:first-child {
+    font-weight: 900;
+    font-size: 60px;
+  }
+  .component-2 .text p:last-child {
+    font-size: 15px;
+  }
+  .component-2 .arrows i {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-2 {
+    height: 720px;
+  }
+  .component-2 .container {
+    padding: 30px;
+  }
+  .component-2 .container .text p:first-child {
+    font-weight: 900;
+    font-size: 30px;
+  }
+  .component-2 .container .text p:last-child {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .component-2 .container .arrows i {
+    font-size: 19px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.component-3 {
+  display: flex;
+  width: 100%;
+  margin-top: 65px;
+  margin-bottom: 70px;
+  justify-content: center;
+}
+.component-3 img {
+  margin-top: 30px;
+}
+.component-3 p:first-child {
+  font-weight: 900;
+  font-size: 30px;
+  color: #2C3E50;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+.component-3 p:not(:first-child) {
+  margin-bottom: 25px;
+  color: #A1B1BC;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.component-3 div:last-child {
+  width: 577px;
+}
+.component-3 button {
+  width: 211px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #2C3E50;
+  border-radius: 5px;
+  color: #2C3E50;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1280px) {
+  .component-3 div:last-child {
+    width: 420px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-3 {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .component-3 img {
+    width: 50%;
+  }
+  .component-3 div:last-child {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
