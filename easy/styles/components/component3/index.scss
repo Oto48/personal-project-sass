@@ -1,11 +1,10 @@
 @import "../../palette";
 
 .component-3{
-    display: flex;
+    @include flex(row, center, center);
     width: 100%;
     margin-top: 65px;
     margin-bottom: 70px;
-    justify-content: center;
 
     img{
         margin-top: 30px;

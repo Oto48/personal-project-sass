@@ -1,11 +1,8 @@
 .component-6{
+    @include flex(column, center, center);
     width: 100%;
     height: 627px;
     background: #222533;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
     color: white;
 
     p:first-child{
@@ -16,27 +13,22 @@
     }
 
     .container{
-        display: flex;
-        justify-content: space-around;
+        @include flex(row, flex-start, space-around);
         width: 60%;
 
         .card{
+            @include flex(column, center, center);
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             letter-spacing: 2px;
             width: 20%;
 
             .logo{
+                @include flex(row, center, center);
                 width: 110px;
                 height: 110px;
                 background-color: white;
                 border-radius: 50%;
                 border: 5px solid #707070;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 font-size: 30px;
         
                 i{
@@ -66,8 +58,7 @@
             height: auto;
         }
         .container{
-            flex-direction: column;
-            align-items: center;
+            @include flex(column, center, center);
         }
     }
     

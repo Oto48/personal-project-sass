@@ -1,14 +1,62 @@
 .component-5{
-    display: flex;
-    justify-content: center;
+    @include flex(row, flex-start, center);
     position: relative;
     height: 845px;
+
+    p{
+        font-size: 14px;
+        color: #A1B1BC;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
 
     div:first-child{
         width: 30%;
         margin-top: 70px;
         margin-right: 40px;
         height: 100%;
+
+        .text{
+            margin-bottom: 25px;
+        }
+
+        .head{
+            font-size: 30px;
+            font-weight: 900;
+            color: #2C3E50;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        button{
+            width: 181px;
+            height: 40px;
+            border: 2px solid #2C3E50;
+            border-radius: 5px;
+            background: transparent;
+            color: #2C3E50;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .logos{
+        margin-top: 30px;
+        width: 400px;
+
+        p{
+            border-bottom: 1px solid #ECF0F1;
+            margin-bottom: 0px;
+
+            i{
+                font-size: 16px;
+                color: #2C3E50;
+                margin-right: 20px;
+                margin-bottom: 6px;
+            }
+        }
     }
 
     div:last-child{
@@ -22,55 +70,6 @@
         top: 70px;
         left: 40px;
         z-index: -1;
-    }
-
-    .head{
-        font-size: 30px;
-        font-weight: 900;
-        color: #2C3E50;
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-    }
-
-    p{
-        font-size: 14px;
-        color: #A1B1BC;
-        line-height: 24px;
-        letter-spacing: 1px;
-    }
-
-    button{
-        width: 181px;
-        height: 40px;
-        border: 2px solid #2C3E50;
-        border-radius: 5px;
-        background: transparent;
-        color: #2C3E50;
-        font-size: 14px;
-        font-weight: bold;
-        margin-top: 30px;
-        letter-spacing: 1px;
-    }
-
-    .text{
-        margin-bottom: 25px;
-    }
-
-    i{
-        font-size: 16px;
-        color: #2C3E50;
-        margin-right: 20px;
-        margin-bottom: 6px;
-    }
-
-    .logos{
-        margin-top: 30px;
-        width: 400px;
-    }
-
-    p{
-        border-bottom: 1px solid #ECF0F1;
-        margin-bottom: 0px;
     }
 
     @media only screen and (max-width: 1480px) {

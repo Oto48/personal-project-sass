@@ -1,4 +1,5 @@
 @import "../../palette";
+@import "../../shared";
 
 .component-2{
     width: 100%;
@@ -6,11 +7,10 @@
     background: #999999;
 
     .container{
+        @include flex(row, center, center);
         padding: 0 50px;
         width: 100%;
         height: 100%;
-        display: flex;
-        align-items: center;
         position: relative;
         background-color: rgba(26, 28, 39, 0.7);
 
@@ -39,16 +39,12 @@
         }
 
         .arrows{
+            @include flex(row, baseline, space-between);
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
             margin-bottom: 120px;
 
             i{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex(row, center, center);
                 background: #03FBCA;
                 font-size: 24px;
                 color: #2C3E50;
@@ -150,67 +146,3 @@
 
     }
 }
-
-
-
-
-// @media only screen and (max-width: 1280px) {
-//     .component-2{
-//         height: 880px;
-//     }
-//     .component-2 .text p:first-child{
-//         font-weight: 900;
-//         font-size: 80px;
-//     }
-//     .component-2 .text p:last-child{
-//         font-size: 20px;
-//     }
-
-//     .component-2 .arrows i{
-//         font-size: 22px;
-//         width: 40px;
-//         height: 40px;
-//     }
-
-// }
-
-// @media only screen and (max-width: 1025px) {
-//     .component-2{
-//         height: 780px;
-//     }
-//     .component-2 .text p:first-child{
-//         font-weight: 900;
-//         font-size: 60px;
-//     }
-//     .component-2 .text p:last-child{
-//         font-size: 15px;
-//     }
-//     .component-2 .arrows i{
-//         font-size: 20px;
-//         width: 30px;
-//         height: 30px;
-//     }
-
-// }
-
-// @media only screen and (max-width: 768px) {
-//     .component-2{
-//         height: 720px;
-//     }
-//     .component-2 .text p:first-child{
-//         font-weight: 900;
-//         font-size: 30px;
-//     }
-//     .component-2 .text p:last-child{
-//         font-size: 14px;
-//         letter-spacing: 0;
-//     }
-//     .component-2 .arrows i{
-//         font-size: 19px;
-//         width: 25px;
-//         height: 25px;
-//     }
-//     .component-2 .container{
-//         padding: 30px;
-//     }
-// }
