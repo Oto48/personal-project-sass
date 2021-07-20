@@ -328,4 +328,984 @@ body {
   }
 }
 
+.component-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.component-4 div {
+  height: 360px;
+  font-size: 14px;
+  color: white;
+  padding: 55px 80px;
+  line-height: 24px;
+}
+.component-4 div:first-child {
+  background: #4E459A;
+}
+.component-4 div:nth-child(2) {
+  background: #63D8FF;
+}
+.component-4 div:last-child {
+  background: #E36968;
+}
+.component-4 p:first-child {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.component-4 button {
+  width: 170px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1480px) {
+  .component-4 div {
+    padding: 55px 50px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .component-4 div {
+    height: 320px;
+    font-size: 14px;
+    padding: 40px 25px;
+    line-height: 17px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .component-4 div {
+    height: 360px;
+    font-size: 14px;
+    padding: 10px 30px;
+    line-height: 20px;
+  }
+  .component-4 .item {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-4 {
+    grid-template-columns: 1fr;
+  }
+  .component-4 div {
+    height: 280px;
+  }
+  .component-4 .item {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .component-4 div {
+    height: auto;
+  }
+  .component-4 .item {
+    height: auto;
+  }
+}
+
+.component-5 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 845px;
+}
+.component-5 div:first-child {
+  width: 30%;
+  margin-top: 70px;
+  margin-right: 40px;
+  height: 100%;
+}
+.component-5 div:last-child {
+  position: relative;
+  width: 539px;
+}
+.component-5 img {
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  left: 40px;
+  z-index: -1;
+}
+.component-5 .head {
+  font-size: 30px;
+  font-weight: 900;
+  color: #2C3E50;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.component-5 p {
+  font-size: 14px;
+  color: #A1B1BC;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.component-5 button {
+  width: 181px;
+  height: 40px;
+  border: 2px solid #2C3E50;
+  border-radius: 5px;
+  background: transparent;
+  color: #2C3E50;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+.component-5 .text {
+  margin-bottom: 25px;
+}
+.component-5 i {
+  font-size: 16px;
+  color: #2C3E50;
+  margin-right: 20px;
+  margin-bottom: 6px;
+}
+.component-5 .logos {
+  margin-top: 30px;
+  width: 400px;
+}
+.component-5 p {
+  border-bottom: 1px solid #ECF0F1;
+  margin-bottom: 0px;
+}
+@media only screen and (max-width: 1480px) {
+  .component-5 div:first-child {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .component-5 {
+    height: auto;
+  }
+  .component-5 div:first-child {
+    width: 50%;
+    margin-top: 0;
+  }
+  .component-5 p {
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+  .component-5 .text {
+    margin-bottom: 12px;
+  }
+  .component-5 img {
+    position: absolute;
+    width: 80%;
+    top: 70px;
+    z-index: -1;
+  }
+  .component-5 button {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .component-5 div:last-child {
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    bottom: 0;
+  }
+  .component-5 div:first-child {
+    width: 95%;
+    margin-right: 0;
+  }
+  .component-5 p {
+    color: #1d2a36;
+  }
+  .component-5 div:last-child {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+  }
+  .component-5 img {
+    filter: blur(4px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-5 div:first-child {
+    margin: auto;
+  }
+  .component-5 .logos {
+    width: 100%;
+  }
+  .component-5 .head {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .component-5 .head {
+    font-size: 20px;
+  }
+}
+
+.component-6 {
+  width: 100%;
+  height: 627px;
+  background: #222533;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.component-6 p:first-child {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.component-6 .container {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+.component-6 .container .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 2px;
+  width: 20%;
+}
+.component-6 .container .card .logo {
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  border-radius: 50%;
+  border: 5px solid #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.component-6 .container .card .logo i {
+  color: #2C3E50;
+}
+.component-6 .container .card .line {
+  width: 40px;
+  border: 2px solid #21C2F8;
+  margin: 0;
+}
+.component-6 .container .card p:nth-of-type(1) {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.component-6 .container .card p:nth-of-type(2) {
+  font-size: 18px;
+}
+@media only screen and (max-width: 1280px) {
+  .component-6 {
+    height: auto;
+  }
+  .component-6 .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .component-6 p:first-child {
+    font-size: 20px;
+  }
+}
+
+.component-7 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 20px;
+}
+.component-7 .head {
+  font-size: 30px;
+  color: #2C3E50;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.component-7 > div:last-child > p:first-child {
+  margin-bottom: 20px;
+}
+.component-7 .grid-container {
+  display: grid;
+  grid-template-columns: auto 40px;
+  grid-template-rows: 40px auto 40px;
+  width: 100%;
+  grid-row-gap: 5px;
+}
+.component-7 .grid-container div {
+  border: 1px solid #E5E5E5;
+}
+.component-7 .grid-container div:nth-of-type(3) {
+  grid-column: span 2;
+}
+.component-7 .grid-container div:not(div:nth-of-type(3), .grid-logo) {
+  color: #2C3E50;
+  font-size: 14px;
+  font-weight: 900;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+.component-7 .grid-container .grid-2 {
+  display: grid;
+  grid-template-columns: auto 40px;
+  grid-template-rows: 40px 120px;
+  border: none;
+}
+.component-7 .grid-container .grid-2 div:nth-of-type(3) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: none;
+  padding-right: 10%;
+}
+.component-7 .grid-container .grid-2 div:nth-of-type(3) div {
+  width: 30%;
+  height: 80px;
+  margin: 0 10px;
+  background: #CCCCCC;
+  border: none;
+}
+.component-7 .grid-container .grid-logo {
+  font-size: 16px;
+  font-family: Arial;
+  padding-left: 10px;
+  color: #999999;
+  border-left: none;
+}
+.component-7 .grid-2 div:nth-of-type(3) p {
+  font-size: 14px;
+  color: #A1B1BC;
+  width: 358px;
+  line-height: 24px;
+}
+.component-7 .grid-container2 {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto;
+}
+.component-7 .grid-container2 .grid-item {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  margin-bottom: 10px;
+}
+.component-7 .grid-container2 .grid-item .first {
+  grid-column: span 2;
+  width: 100%;
+  height: 20px;
+  border: 1px solid #E7E7E7;
+  background: #F0F0F0;
+  border-radius: 8px;
+  padding: 3px;
+}
+.component-7 .grid-container2 .grid-item .second {
+  height: 100%;
+  background: #1ABC9C;
+  border-radius: 10px;
+}
+.component-7 .grid-container2 .grid-item p:nth-of-type(1) {
+  font-weight: 900;
+  font-size: 14px;
+  color: #2C3E50;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.component-7 .grid-container2 .grid-item p:nth-of-type(2) {
+  font-family: Arial;
+  font-size: 14px;
+  text-align: end;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.component-7 > div {
+  width: 570px;
+}
+.component-7 .bg {
+  background: #ECF0F1;
+}
+.component-7 .green {
+  color: #1ABC9C;
+}
+@media only screen and (max-width: 1280px) {
+  .component-7 > div {
+    width: 470px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-7 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-7 > div {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .component-7 .grid-container p {
+    font-size: 10px;
+  }
+  .component-7 .grid-2 div:nth-of-type(3) p {
+    width: 80%;
+    line-height: 15px;
+  }
+}
+
+.component-8 {
+  width: 100%;
+  height: 1435px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  margin-top: 100px;
+  background: #F9FAFB;
+}
+.component-8 .head {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+.component-8 .head p:first-child {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #2C3E50;
+  margin-bottom: 0;
+}
+.component-8 .head p:last-child {
+  color: #A1B1BC;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.component-8 .grid-container {
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  grid-template-rows: 540px 540px;
+  gap: 2%;
+  justify-content: center;
+}
+.component-8 .grid-container .grid-item {
+  background-color: white;
+  border: 1px solid #ECF0F1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.component-8 .grid-container .grid-item .box {
+  width: 100%;
+  height: 270px;
+  background: transparent;
+  border-bottom: 1px solid #ECF0F1;
+}
+.component-8 .grid-container .grid-item .person {
+  width: 90%;
+  height: 70px;
+  border-bottom: 1px solid #ECF0F1;
+}
+.component-8 .grid-container .grid-item .person p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+.component-8 .grid-container .grid-item .person p:first-child {
+  color: #2C3E50;
+  font-size: 18px;
+  font-weight: 900;
+}
+.component-8 .grid-container .grid-item .person p:last-child {
+  color: #A1B1BC;
+  font-size: 14px;
+}
+.component-8 .grid-container .grid-item .footer {
+  width: 90%;
+}
+.component-8 .grid-container .grid-item .footer p {
+  font-size: 14px;
+  color: #A1B1BC;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.component-8 .grid-container .grid-item .footer button {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #2C3E50;
+  background: transparent;
+  border-radius: 5px;
+}
+.component-8 .grid-container .grid-item .footer button:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  background: #1ABC9C;
+  border-color: #1ABC9C;
+}
+@media only screen and (max-width: 1280px) {
+  .component-8 .grid-container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 540px 540px;
+    gap: 2%;
+    justify-content: center;
+  }
+  .component-8 .grid-container .person p:first-child {
+    font-size: 14px;
+  }
+  .component-8 .grid-container .footer p {
+    line-height: 21px;
+  }
+  .component-8 .grid-container .footer button {
+    height: 35px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-8 {
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .component-8 .grid-container {
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 520px 520px 520px;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-8 .grid-container {
+    grid-template-columns: 90%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+  }
+  .component-8 .grid-container .footer button {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .component-8 .head p:first-child {
+    font-size: 20px;
+  }
+  .component-8 .head p:last-child {
+    font-size: 14px;
+  }
+}
+
+.component-9 {
+  height: 600px;
+  background: #2C3E50;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.component-9 .color {
+  background: rgba(34, 37, 51, 0.3);
+  width: 100%;
+  height: 100%;
+}
+.component-9 .text {
+  padding-top: 185px;
+  width: 1170px;
+  margin: auto;
+  line-height: 40px;
+}
+.component-9 .text p:first-child {
+  font-size: 24px;
+  font-weight: 900;
+}
+.component-9 .text p:last-child {
+  font-size: 16px;
+  word-spacing: 15px;
+}
+.component-9 .buttons {
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 9%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.component-9 .buttons .button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+}
+.component-9 .buttons .button:hover {
+  cursor: pointer;
+  background: #1ADFB8;
+}
+@media only screen and (max-width: 1280px) {
+  .component-9 .text {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-9 {
+    height: 500px;
+  }
+  .component-9 .text {
+    line-height: 30px;
+    padding-top: 120px;
+  }
+  .component-9 .text p:first-child {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-9 {
+    height: auto;
+  }
+  .component-9 .text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .component-9 .text p:first-child {
+    font-size: 15px;
+  }
+  .component-9 .text p:last-child {
+    font-size: 14px;
+  }
+}
+
+.component-10 {
+  width: 100%;
+  height: 710px;
+  background: #1A1C27;
+}
+.component-10 .head {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.component-10 .green {
+  color: #1ABC9C;
+  cursor: pointer;
+}
+.component-10 .box {
+  width: 50px;
+  height: 50px;
+  background: #959595;
+  margin-top: 5px;
+}
+.component-10 .box span {
+  width: 100%;
+  height: 100%;
+  color: #959595;
+  font-size: 30px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component-10 .box span:hover {
+  color: white;
+}
+.component-10 .logo {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: space-between;
+  width: 155px;
+  margin-top: 0;
+  font-size: 35px;
+}
+.component-10 .logo span {
+  font-weight: 900;
+}
+.component-10 .logo p {
+  margin: 0;
+}
+.component-10 .logo img {
+  width: 40px;
+  height: 45px;
+}
+.component-10 .container {
+  padding-top: 80px;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  gap: 2%;
+}
+.component-10 .container > div:nth-child(3) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.component-10 .item {
+  width: 270px;
+}
+.component-10 .item:first-child p:not(.logo p) {
+  font-size: 14px;
+  color: #758590;
+  line-height: 24px;
+  margin-top: 25px;
+}
+.component-10 .item:last-child > div p:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: #A1B1BC;
+}
+.component-10 .item:last-child > div p:not(:first-child) {
+  font-size: 14px;
+  color: #758590;
+}
+.component-10 .item:last-child > div p:last-child {
+  border-bottom: 1px solid #243240;
+  padding-bottom: 20px;
+}
+.component-10 .item:last-child > div:last-child p:nth-last-of-type(2) {
+  margin-bottom: 5px;
+}
+.component-10 .item:last-child > div:last-child p:last-child {
+  border: none;
+  margin-top: 0;
+  padding: 0;
+}
+.component-10 .flex-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 8%;
+}
+.component-10 .flex-container:nth-last-of-type(2) {
+  border-top: 1px solid #243240;
+  border-bottom: 1px solid #243240;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.component-10 .flex-container div:nth-child(2) {
+  width: 80%;
+}
+.component-10 .flex-container div:nth-child(2) p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.component-10 .flex-container div:nth-child(2) p:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: #A1B1BC;
+}
+.component-10 .flex-container div:nth-child(2) p:nth-child(2) {
+  font-size: 14px;
+  color: #758590;
+  line-height: 24px;
+}
+.component-10 .flex-container div:nth-child(2) p:nth-child(3) {
+  font-size: 13px;
+  color: #A1B1BC;
+}
+.component-10 .flex-container .box:hover {
+  cursor: pointer;
+  background: #1ABC9C;
+}
+.component-10 .flex-container2 {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  color: #A1B1BC;
+}
+.component-10 .flex-container2:nth-of-type(1) p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  border: 1px solid #A1B1BC;
+}
+.component-10 .flex-container2:nth-of-type(2) p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border: 1px solid #A1B1BC;
+}
+.component-10 .flex-container2 p {
+  margin: 0;
+}
+.component-10 .flex-container2 p:hover {
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+}
+.component-10 ul {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 14px;
+}
+.component-10 ul .a {
+  color: #1ABC9C;
+}
+.component-10 ul .a:hover {
+  color: white;
+  cursor: pointer;
+}
+.component-10 ul .b {
+  color: #A1B1BC;
+}
+.component-10 ul .b:hover {
+  color: #1ABC9C;
+  cursor: pointer;
+}
+.component-10 ul li {
+  border-bottom: 1px solid #353535;
+  padding: 10px 0;
+}
+.component-10 .links {
+  font-size: 18px;
+  font-weight: 700px;
+  margin-top: 45px;
+}
+@media only screen and (max-width: 1280px) {
+  .component-10 {
+    height: auto;
+  }
+  .component-10 .container {
+    grid-template-columns: auto auto auto;
+  }
+  .component-10 .container > div:first-child {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-10 .container {
+    grid-template-columns: auto auto;
+    gap: 0;
+    column-gap: 5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-10 .container {
+    grid-template-columns: auto;
+    gap: 0;
+  }
+  .component-10 .container > div {
+    margin: auto;
+    width: 95%;
+    line-height: 15px;
+  }
+  .component-10 .container > div:not(:first-child) {
+    margin-top: 40px;
+  }
+  .component-10 .container > div:first-child {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .component-10 .component-10 .item:first-child p:not(.logo p) {
+    margin-top: 5px;
+  }
+}
+
+.component-11 {
+  width: 100%;
+  height: 82px;
+  background: #222533;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: #A1B1BC;
+  align-items: center;
+  letter-spacing: 0.5px;
+  gap: 3%;
+}
+.component-11 .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 600px;
+}
+.component-11 .flex-container p {
+  padding: 0 10px;
+}
+.component-11 .flex-container p:nth-of-type(1) span {
+  color: #1ABC9C;
+}
+.component-11 .flex-container p:nth-of-type(1) span:last-child {
+  font-weight: 900;
+}
+.component-11 .flex-container p:nth-of-type(2) {
+  border-left: 1px solid #304253;
+  border-right: 1px solid #304253;
+}
+.component-11 ul {
+  display: flex;
+  align-items: center;
+  width: 670px;
+  justify-content: space-between;
+  padding: 0%;
+  padding-right: 100px;
+  list-style-type: none;
+}
+.component-11 ul li:hover {
+  cursor: pointer;
+  color: #1ABC9C;
+}
+@media only screen and (max-width: 1280px) {
+  .component-11 ul {
+    width: 50%;
+    padding-right: 10px;
+  }
+  .component-11 p {
+    padding: 0 5px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .component-11 {
+    flex-direction: column-reverse;
+  }
+  .component-11 .flex-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .component-11 ul {
+    width: 100%;
+    justify-content: space-around;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-11 {
+    height: auto;
+  }
+  .component-11 ul {
+    font-size: 12px;
+  }
+  .component-11 .flex-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .component-11 p:nth-of-type(2) {
+    border: none;
+  }
+  .component-11 p:not(:nth-of-type(1)) {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .component-11 ul {
+    font-size: 7px;
+  }
+  .component-11 p {
+    margin-top: 0;
+    font-size: 10px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
