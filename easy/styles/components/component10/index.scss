@@ -24,12 +24,10 @@
         span{
             width: 100%;
             height: 100%;
-            color: #959595;
+            color: $-grey;
             font-size: 30px;
             font-weight: 300;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex(row, center, center);
 
             &:hover{
                 color: $-white;
@@ -38,10 +36,8 @@
     }
 
     .logo{
-        display: flex;
-        align-items: center;
+        @include flex(row, center, space-between);
         height: 40px;
-        justify-content: space-between;
         width: 155px;
         margin-top: 0;
         font-size: 35px;
@@ -70,8 +66,7 @@
     }
 
     .container > div:nth-child(3) > div{
-        display: flex;
-        flex-direction: column;
+        @include flex(column, flex-start, center);
         gap: 10px;
     }
 
@@ -97,7 +92,7 @@
         }
 
         &:last-child > div p:last-child{
-            border-bottom: 1px solid #243240;
+            border-bottom: 1px solid $-dark-border;
             padding-bottom: 20px;
         }
 
@@ -113,13 +108,12 @@
     }
 
     .flex-container{
-        display: flex;
-        align-items: flex-start;
+        @include flex(row, flex-start, center);
         gap: 8%;
 
         &:nth-last-of-type(2){
-            border-top: 1px solid #243240;
-            border-bottom: 1px solid #243240;
+            border-top: 1px solid $-dark-border;
+            border-bottom: 1px solid $-dark-border;
             padding: 10px 0;
             margin: 10px 0;
         }
@@ -157,25 +151,21 @@
     }
 
     .flex-container2{
-        display: flex;
+        @include flex(row, center, center);
         gap: 10px;
         font-size: 15px;
         color: $-grey-text;
 
         &:nth-of-type(1) p{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex(row, center, center);
             padding: 10px 8px;
-            border: 1px solid $-grey-text;
+            border: 1px solid $-dark-border;
         }
 
         &:nth-of-type(2) p{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex(row, center, center);
             padding: 10px 14px;
-            border: 1px solid $-grey-text;
+            border: 1px solid $-dark-border;
         }
 
         p{
@@ -214,7 +204,7 @@
         }
 
         li{
-            border-bottom: 1px solid #353535;
+            border-bottom: 1px solid $-dark-border;
             padding: 10px 0;
         }
     }

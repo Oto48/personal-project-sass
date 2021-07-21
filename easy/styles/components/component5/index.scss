@@ -2,21 +2,41 @@
     @include flex(row, flex-start, center);
     position: relative;
     height: 845px;
-
     p{
         font-size: 14px;
         color: $-grey-text;
         line-height: 24px;
         letter-spacing: 1px;
+        width: 100%;
+    }
+
+
+    @for $i from 5 to 10 {
+        p:nth-child(#{$i}){
+            border-bottom: 1px solid $-white-border;
+            margin-bottom: 0px;
+            width: 400px;
+
+            @if $i == 5{
+                margin-top: 30px;
+            }
+
+            i{
+                font-size: 16px;
+                color: $-dark;
+                margin-right: 20px;
+                margin-bottom: 6px;
+            }
+        }
     }
 
     div:first-child{
-        width: 30%;
+        width: 35%;
         margin-top: 70px;
         margin-right: 40px;
-        height: 100%;
+        height: auto;
 
-        .text{
+        & > p{
             margin-bottom: 25px;
         }
 
@@ -42,23 +62,6 @@
         }
     }
 
-    .logos{
-        margin-top: 30px;
-        width: 400px;
-
-        p{
-            border-bottom: 1px solid #ECF0F1;
-            margin-bottom: 0px;
-
-            i{
-                font-size: 16px;
-                color: $-dark;
-                margin-right: 20px;
-                margin-bottom: 6px;
-            }
-        }
-    }
-
     div:last-child{
         position: relative;
         width: 539px;
@@ -72,9 +75,13 @@
         z-index: -1;
     }
 
-    @media only screen and (max-width: 1480px) {
+    @media only screen and (max-width: 1580px) {
+        &{
+            height: auto;
+        }
         div:first-child{
             width: 35%;
+            height: auto;
         }
     }
 
@@ -85,14 +92,16 @@
         div:first-child{
             width: 50%;
             margin-top: 0;
+
+            & > p{
+                margin-bottom: 12px;
+            }
         }
         p{
             line-height: 20px;
             letter-spacing: 1px;
         }
-        .text{
-            margin-bottom: 12px;
-        }
+
         img{
             position: absolute;
             width: 80%;
@@ -138,8 +147,12 @@
         div:first-child{
             margin: auto;
         }
-        .logos{
-            width: 100%;
+        @for $i from 5 to 10 {
+            p:nth-child(#{$i}){
+                border-bottom: 1px solid $-white-border;
+                margin-bottom: 0px;
+                width: 90%;
+            }
         }
         .head{
             font-size: 25px;
@@ -153,3 +166,4 @@
     }
     
 }
+

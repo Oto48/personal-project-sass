@@ -20,7 +20,7 @@ body {
 .component-1 .container {
   width: 100%;
   height: 100%;
-  background-color: rgba(34, 37, 51, 0.9);
+  background: rgba(34, 37, 51, 0.9);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -178,7 +178,7 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: rgba(26, 28, 39, 0.7);
+  background: rgba(26, 28, 39, 0.7);
 }
 .component-2 .container .text {
   margin: 0;
@@ -440,14 +440,71 @@ body {
   color: #A1B1BC;
   line-height: 24px;
   letter-spacing: 1px;
+  width: 100%;
+}
+.component-5 p:nth-child(5) {
+  border-bottom: 1px solid #ECF0F1;
+  margin-bottom: 0px;
+  width: 400px;
+  margin-top: 30px;
+}
+.component-5 p:nth-child(5) i {
+  font-size: 16px;
+  color: #2C3E50;
+  margin-right: 20px;
+  margin-bottom: 6px;
+}
+.component-5 p:nth-child(6) {
+  border-bottom: 1px solid #ECF0F1;
+  margin-bottom: 0px;
+  width: 400px;
+}
+.component-5 p:nth-child(6) i {
+  font-size: 16px;
+  color: #2C3E50;
+  margin-right: 20px;
+  margin-bottom: 6px;
+}
+.component-5 p:nth-child(7) {
+  border-bottom: 1px solid #ECF0F1;
+  margin-bottom: 0px;
+  width: 400px;
+}
+.component-5 p:nth-child(7) i {
+  font-size: 16px;
+  color: #2C3E50;
+  margin-right: 20px;
+  margin-bottom: 6px;
+}
+.component-5 p:nth-child(8) {
+  border-bottom: 1px solid #ECF0F1;
+  margin-bottom: 0px;
+  width: 400px;
+}
+.component-5 p:nth-child(8) i {
+  font-size: 16px;
+  color: #2C3E50;
+  margin-right: 20px;
+  margin-bottom: 6px;
+}
+.component-5 p:nth-child(9) {
+  border-bottom: 1px solid #ECF0F1;
+  margin-bottom: 0px;
+  width: 400px;
+}
+.component-5 p:nth-child(9) i {
+  font-size: 16px;
+  color: #2C3E50;
+  margin-right: 20px;
+  margin-bottom: 6px;
 }
 .component-5 div:first-child {
-  width: 30%;
+  width: 35%;
   margin-top: 70px;
   margin-right: 40px;
-  height: 100%;
+  height: auto;
 }
-.component-5 div:first-child .text {
+.component-5 div:first-child > p {
   margin-bottom: 25px;
 }
 .component-5 div:first-child .head {
@@ -469,20 +526,6 @@ body {
   margin-top: 30px;
   letter-spacing: 1px;
 }
-.component-5 .logos {
-  margin-top: 30px;
-  width: 400px;
-}
-.component-5 .logos p {
-  border-bottom: 1px solid #ECF0F1;
-  margin-bottom: 0px;
-}
-.component-5 .logos p i {
-  font-size: 16px;
-  color: #2C3E50;
-  margin-right: 20px;
-  margin-bottom: 6px;
-}
 .component-5 div:last-child {
   position: relative;
   width: 539px;
@@ -494,9 +537,13 @@ body {
   left: 40px;
   z-index: -1;
 }
-@media only screen and (max-width: 1480px) {
+@media only screen and (max-width: 1580px) {
+  .component-5 {
+    height: auto;
+  }
   .component-5 div:first-child {
     width: 35%;
+    height: auto;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -507,12 +554,12 @@ body {
     width: 50%;
     margin-top: 0;
   }
+  .component-5 div:first-child > p {
+    margin-bottom: 12px;
+  }
   .component-5 p {
     line-height: 20px;
     letter-spacing: 1px;
-  }
-  .component-5 .text {
-    margin-bottom: 12px;
   }
   .component-5 img {
     position: absolute;
@@ -557,8 +604,30 @@ body {
   .component-5 div:first-child {
     margin: auto;
   }
-  .component-5 .logos {
-    width: 100%;
+  .component-5 p:nth-child(5) {
+    border-bottom: 1px solid #ECF0F1;
+    margin-bottom: 0px;
+    width: 90%;
+  }
+  .component-5 p:nth-child(6) {
+    border-bottom: 1px solid #ECF0F1;
+    margin-bottom: 0px;
+    width: 90%;
+  }
+  .component-5 p:nth-child(7) {
+    border-bottom: 1px solid #ECF0F1;
+    margin-bottom: 0px;
+    width: 90%;
+  }
+  .component-5 p:nth-child(8) {
+    border-bottom: 1px solid #ECF0F1;
+    margin-bottom: 0px;
+    width: 90%;
+  }
+  .component-5 p:nth-child(9) {
+    border-bottom: 1px solid #ECF0F1;
+    margin-bottom: 0px;
+    width: 90%;
   }
   .component-5 .head {
     font-size: 25px;
@@ -648,6 +717,8 @@ body {
 
 .component-7 {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
   margin-top: 70px;
   gap: 20px;
@@ -669,7 +740,7 @@ body {
   grid-row-gap: 5px;
 }
 .component-7 .grid-container div {
-  border: 1px solid #E5E5E5;
+  border: 1px solid #ECF0F1;
 }
 .component-7 .grid-container div:nth-of-type(3) {
   grid-column: span 2;
@@ -689,6 +760,7 @@ body {
 }
 .component-7 .grid-container .grid-2 div:nth-of-type(3) {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-top: none;
@@ -720,34 +792,34 @@ body {
   grid-template-rows: auto auto auto auto;
   grid-template-columns: auto;
 }
-.component-7 .grid-container2 .grid-item {
+.component-7 .grid-container2 div {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
   margin-bottom: 10px;
 }
-.component-7 .grid-container2 .grid-item .first {
+.component-7 .grid-container2 div .first {
   grid-column: span 2;
   width: 100%;
   height: 20px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #ECF0F1;
   background: #F0F0F0;
   border-radius: 8px;
   padding: 3px;
 }
-.component-7 .grid-container2 .grid-item .second {
+.component-7 .grid-container2 div .second {
   height: 100%;
   background: #1ABC9C;
   border-radius: 10px;
 }
-.component-7 .grid-container2 .grid-item p:nth-of-type(1) {
+.component-7 .grid-container2 div p:nth-of-type(1) {
   font-weight: 900;
   font-size: 14px;
   color: #2C3E50;
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-.component-7 .grid-container2 .grid-item p:nth-of-type(2) {
+.component-7 .grid-container2 div p:nth-of-type(2) {
   font-family: Arial;
   font-size: 14px;
   text-align: end;
@@ -758,7 +830,7 @@ body {
   width: 570px;
 }
 .component-7 .bg {
-  background: #ECF0F1;
+  background: #F0F0F0;
 }
 .component-7 .green {
   color: #1ABC9C;
@@ -770,8 +842,10 @@ body {
 }
 @media only screen and (max-width: 1025px) {
   .component-7 {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -792,10 +866,10 @@ body {
 .component-8 {
   width: 100%;
   height: 1435px;
-  border-top: 1px solid #dbdbdb;
-  border-bottom: 1px solid #dbdbdb;
+  border-top: 1px solid #ECF0F1;
+  border-bottom: 1px solid #ECF0F1;
   margin-top: 100px;
-  background: #F9FAFB;
+  background: #F0F0F0;
 }
 .component-8 .head {
   text-align: center;
@@ -806,7 +880,7 @@ body {
   font-size: 30px;
   font-weight: 900;
   letter-spacing: 3px;
-  color: #1ABC9C;
+  color: #2C3E50;
   margin-bottom: 0;
 }
 .component-8 .head p:last-child {
@@ -822,55 +896,56 @@ body {
   gap: 2%;
   justify-content: center;
 }
-.component-8 .grid-container .grid-item {
+.component-8 .grid-container > div {
   background-color: white;
   border: 1px solid #ECF0F1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.component-8 .grid-container .grid-item .box {
+.component-8 .grid-container > div .box {
   width: 100%;
   height: 270px;
   background: transparent;
   border-bottom: 1px solid #ECF0F1;
 }
-.component-8 .grid-container .grid-item .person {
+.component-8 .grid-container > div .person {
   width: 90%;
   height: 70px;
   border-bottom: 1px solid #ECF0F1;
 }
-.component-8 .grid-container .grid-item .person p {
+.component-8 .grid-container > div .person p {
   margin-top: 5px;
   margin-bottom: 0;
   letter-spacing: 1px;
 }
-.component-8 .grid-container .grid-item .person p:first-child {
+.component-8 .grid-container > div .person p:first-child {
   color: #2C3E50;
   font-size: 18px;
   font-weight: 900;
 }
-.component-8 .grid-container .grid-item .person p:last-child {
+.component-8 .grid-container > div .person p:last-child {
   color: #A1B1BC;
   font-size: 14px;
 }
-.component-8 .grid-container .grid-item .footer {
+.component-8 .grid-container > div .footer {
   width: 90%;
 }
-.component-8 .grid-container .grid-item .footer p {
+.component-8 .grid-container > div .footer p {
   font-size: 14px;
   color: #A1B1BC;
   line-height: 24px;
   letter-spacing: 1px;
 }
-.component-8 .grid-container .grid-item .footer button {
+.component-8 .grid-container > div .footer button {
   width: 100%;
   height: 40px;
   border: 2px solid #2C3E50;
   background: transparent;
   border-radius: 5px;
 }
-.component-8 .grid-container .grid-item .footer button:hover {
+.component-8 .grid-container > div .footer button:hover {
   cursor: pointer;
   color: white;
   background: #1ABC9C;
@@ -951,8 +1026,10 @@ body {
 }
 .component-9 .buttons {
   display: flex;
-  width: 50px;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  width: 50px;
   position: absolute;
   bottom: 9%;
   left: 50%;
@@ -1028,10 +1105,11 @@ body {
 .component-10 .box span {
   width: 100%;
   height: 100%;
-  color: #959595;
+  color: #999999;
   font-size: 30px;
   font-weight: 300;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -1040,9 +1118,10 @@ body {
 }
 .component-10 .logo {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  height: 40px;
   justify-content: space-between;
+  height: 40px;
   width: 155px;
   margin-top: 0;
   font-size: 35px;
@@ -1068,6 +1147,8 @@ body {
 .component-10 .container > div:nth-child(3) > div {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   gap: 10px;
 }
 .component-10 .item {
@@ -1089,7 +1170,7 @@ body {
   color: #758590;
 }
 .component-10 .item:last-child > div p:last-child {
-  border-bottom: 1px solid #243240;
+  border-bottom: 1px solid #304253;
   padding-bottom: 20px;
 }
 .component-10 .item:last-child > div:last-child p:nth-last-of-type(2) {
@@ -1102,12 +1183,14 @@ body {
 }
 .component-10 .flex-container {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   gap: 8%;
 }
 .component-10 .flex-container:nth-last-of-type(2) {
-  border-top: 1px solid #243240;
-  border-bottom: 1px solid #243240;
+  border-top: 1px solid #304253;
+  border-bottom: 1px solid #304253;
   padding: 10px 0;
   margin: 10px 0;
 }
@@ -1138,23 +1221,28 @@ body {
 }
 .component-10 .flex-container2 {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   font-size: 15px;
   color: #A1B1BC;
 }
 .component-10 .flex-container2:nth-of-type(1) p {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 10px 8px;
-  border: 1px solid #A1B1BC;
+  border: 1px solid #304253;
 }
 .component-10 .flex-container2:nth-of-type(2) p {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 10px 14px;
-  border: 1px solid #A1B1BC;
+  border: 1px solid #304253;
 }
 .component-10 .flex-container2 p {
   margin: 0;
@@ -1185,7 +1273,7 @@ body {
   cursor: pointer;
 }
 .component-10 ul li {
-  border-bottom: 1px solid #353535;
+  border-bottom: 1px solid #304253;
   padding: 10px 0;
 }
 .component-10 .links {
@@ -1235,19 +1323,21 @@ body {
 }
 
 .component-11 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 82px;
   background: #222533;
-  display: flex;
-  justify-content: center;
   font-size: 14px;
   color: #A1B1BC;
-  align-items: center;
   letter-spacing: 0.5px;
   gap: 3%;
 }
 .component-11 .flex-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   width: 600px;
@@ -1267,9 +1357,10 @@ body {
 }
 .component-11 ul {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 670px;
   justify-content: space-between;
+  width: 670px;
   padding: 0%;
   padding-right: 100px;
   list-style-type: none;
@@ -1309,7 +1400,9 @@ body {
     font-size: 12px;
   }
   .component-11 .flex-container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
   .component-11 p:nth-of-type(2) {

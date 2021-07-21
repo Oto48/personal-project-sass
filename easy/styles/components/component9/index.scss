@@ -29,9 +29,8 @@
     }
 
     .buttons{
-        display: flex;
+        @include flex(row, center, space-between);
         width: 50px;
-        justify-content: space-between;
         position: absolute;
         bottom: 9%;
         left: 50%;

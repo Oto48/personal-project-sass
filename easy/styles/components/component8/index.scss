@@ -1,10 +1,10 @@
 .component-8{
     width: 100%;
     height: 1435px;
-    border-top: 1px solid #dbdbdb;
-    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid $-white-border;
+    border-bottom: 1px solid $-white-border;
     margin-top: 100px;
-    background: #F9FAFB;
+    background: $-white-background;
 
     .head{
         text-align: center;
@@ -15,7 +15,7 @@
             font-size: 30px;
             font-weight: 900;
             letter-spacing: 3px;
-            color: $-green;
+            color: $-dark;
             margin-bottom: 0;
         }
 
@@ -35,24 +35,22 @@
         gap: 2%;
         justify-content: center;
 
-        .grid-item {
+        & > div {
             background-color: $-white;
-            border: 1px solid #ECF0F1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            border: 1px solid $-white-border;
+            @include flex(column, center, center);
 
             .box{
                 width: 100%;
                 height: 270px;
                 background: transparent;
-                border-bottom: 1px solid #ECF0F1;
+                border-bottom: 1px solid $-white-border;
             }
 
             .person{
                 width: 90%;
                 height: 70px;
-                border-bottom: 1px solid #ECF0F1;
+                border-bottom: 1px solid $-white-border;
 
                 p{
                     margin-top: 5px;
@@ -60,7 +58,7 @@
                     letter-spacing: 1px;
 
                     &:first-child{
-                        color: #2C3E50;
+                        color: $-dark;
                         font-size: 18px;
                         font-weight: 900;
                     }
