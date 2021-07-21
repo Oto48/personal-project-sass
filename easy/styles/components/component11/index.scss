@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     font-size: 14px;
-    color: #A1B1BC;
+    color: $-grey-text;
     align-items: center;
     letter-spacing: 0.5px;
     gap: 3%;
@@ -20,7 +20,7 @@
             padding: 0 10px;
 
             &:nth-of-type(1) span{
-                color: #1ABC9C;
+                color: $-green;
 
                 &:last-child{
                     font-weight: 900;
@@ -45,7 +45,7 @@
 
         li:hover{
             cursor: pointer;
-            color: #1ABC9C;
+            color: $-green;
         }
     }
 

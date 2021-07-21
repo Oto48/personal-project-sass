@@ -1,5 +1,3 @@
-@import "../../palette";
-
 .component-3{
     @include flex(row, center, center);
     width: 100%;
@@ -14,14 +12,14 @@
         &:first-child{
             font-weight: 900;
             font-size: 30px;
-            color: #2C3E50;
+            color: $-dark;
             margin-bottom: 0;
             letter-spacing: 2px;
         }
 
         &:not(:first-child){
             margin-bottom: 25px;
-            color: #A1B1BC;
+            color: $-grey-text;
             line-height: 24px;
             font-size: 14px;
             letter-spacing: 1px;
@@ -37,9 +35,9 @@
         width: 211px;
         height: 40px;
         background: transparent;
-        border: 2px solid #2C3E50;
+        border: 2px solid $-dark;
         border-radius: 5px;
-        color: #2C3E50;
+        color: $-dark;
         font-weight: bold;
     }
 

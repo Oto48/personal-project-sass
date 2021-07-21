@@ -1,7 +1,7 @@
 .component-9{
     height: 600px;
-    background: #2C3E50;
-    color: white;
+    background: $-dark;
+    color: $-white;
     text-align: center;
     position: relative;
 
@@ -41,11 +41,11 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background: white;
+            background: $-white;
 
             &:hover{
                 cursor: pointer;
-                background: #1ADFB8;
+                background: $-green;
             }
         }
     }

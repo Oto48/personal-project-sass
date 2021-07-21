@@ -6,7 +6,7 @@
 
     .head{
         font-size: 30px;
-        color: #2C3E50;
+        color: $-dark;
         font-weight: 900;
         letter-spacing: 3px;
     }
@@ -32,7 +32,7 @@
         }
 
         div:not(div:nth-of-type(3), .grid-logo){
-            color: #2C3E50;
+            color: $-dark;
             font-size: 14px;
             font-weight: 900;
             padding-left: 10px;
@@ -67,14 +67,14 @@
             font-size: 16px;
             font-family: Arial;
             padding-left: 10px;
-            color: #999999;
+            color: $-grey;
             border-left: none;
         }
     }
 
     .grid-2 div:nth-of-type(3) p{
         font-size: 14px;
-        color: #A1B1BC;
+        color: $-grey-text;
         width: 358px;
         line-height: 24px;
     }
@@ -103,14 +103,14 @@
 
             .second{
                 height: 100%;
-                background: #1ABC9C;
+                background: $-green;
                 border-radius: 10px;
             }
 
             p:nth-of-type(1){
                 font-weight: 900;
                 font-size: 14px;
-                color: #2C3E50;
+                color: $-dark;
                 margin-bottom: 5px;
                 letter-spacing: 1px;
             }
@@ -134,7 +134,7 @@
     }
 
     .green{
-        color: #1ABC9C;
+        color: $-green;
     }
 
     @media only screen and (max-width: 1280px) {

@@ -11,14 +11,14 @@
     }
 
     .green{
-        color: #1ABC9C;
+        color: $-green;
         cursor: pointer;
     }
 
     .box{
         width: 50px;
         height: 50px;
-        background: #959595;
+        background: $-grey;
         margin-top: 5px;
 
         span{
@@ -32,7 +32,7 @@
             justify-content: center;
 
             &:hover{
-                color: white;
+                color: $-white;
             }
         }
     }
@@ -62,7 +62,7 @@
 
     .container{
         padding-top: 80px;
-        color: white;
+        color: $-white;
         display: grid;
         grid-template-columns: auto auto auto auto;
         justify-content: center;
@@ -80,7 +80,7 @@
 
         &:first-child p:not(.logo p){
             font-size: 14px;
-            color: #758590;
+            color: $-dark-text;
             line-height: 24px;
             margin-top: 25px;
         }
@@ -88,12 +88,12 @@
         &:last-child > div p:first-child{
             font-size: 16px;
             font-weight: 700;
-            color: #A1B1BC;
+            color: $-grey-text;
         }
 
         &:last-child > div p:not(:first-child){
             font-size: 14px;
-            color: #758590;
+            color: $-dark-text;
         }
 
         &:last-child > div p:last-child{
@@ -134,25 +134,25 @@
                 &:first-child{
                     font-size: 16px;
                     font-weight: 700;
-                    color: #A1B1BC;
+                    color: $-grey-text;
                 }
 
                 &:nth-child(2){
                     font-size: 14px;
-                    color: #758590;
+                    color: $-dark-text;
                     line-height: 24px;
                 }
 
                 &:nth-child(3){
                     font-size: 13px;
-                    color: #A1B1BC;
+                    color: $-grey-text;
                 }
             }
         }
 
         .box:hover{
             cursor: pointer;
-            background: #1ABC9C;
+            background: $-green;
         }
     }
 
@@ -160,14 +160,14 @@
         display: flex;
         gap: 10px;
         font-size: 15px;
-        color: #A1B1BC;
+        color: $-grey-text;
 
         &:nth-of-type(1) p{
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 10px 8px;
-            border: 1px solid #A1B1BC;
+            border: 1px solid $-grey-text;
         }
 
         &:nth-of-type(2) p{
@@ -175,15 +175,15 @@
             align-items: center;
             justify-content: center;
             padding: 10px 14px;
-            border: 1px solid #A1B1BC;
+            border: 1px solid $-grey-text;
         }
 
         p{
             margin: 0;
 
             &:hover{
-                background: #1ABC9C;
-                color: white;
+                background: $-green;
+                color: $-white;
                 cursor: pointer;
             }
         }
@@ -196,19 +196,19 @@
         font-size: 14px;
 
         .a{
-            color: #1ABC9C;
+            color: $-green;
 
             &:hover{
-                color: white;
+                color: $-white;
                 cursor: pointer;
             }
         }
 
         .b{
-            color: #A1B1BC;
+            color: $-grey-text;
 
             &:hover{
-                color: #1ABC9C;
+                color: $-green;
                 cursor: pointer;
             }
         }
