@@ -1,0 +1,72 @@
+.component-3{
+    @include flex(row, center, center);
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 70px;
+
+    img{
+        margin-top: 30px;
+    }
+
+    p{
+        &:first-child{
+            font-weight: 900;
+            font-size: 30px;
+            color: $-dark;
+            margin-bottom: 0;
+            letter-spacing: 2px;
+        }
+
+        &:not(:first-child){
+            margin-bottom: 25px;
+            color: $-grey-text;
+            line-height: 24px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    }
+
+
+    div:last-child{
+        width: 577px;
+    }
+
+    button{
+        width: 211px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid $-dark;
+        border-radius: 5px;
+        color: $-dark;
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 1280px) {
+
+        div:last-child{
+            width: 420px;
+        }
+    
+    }
+    
+    @media only screen and (max-width: 1025px) {
+        &{
+            flex-direction: column;
+            flex-flow: column-reverse;
+            align-items: center;
+        }
+    
+        img{
+            width: 50%;
+        }
+    
+        div:last-child{
+            width: 80%;
+            text-align: center;
+        }
+    
+    }
+    
+}
+
+

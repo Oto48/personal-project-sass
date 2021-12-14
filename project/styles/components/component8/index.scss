@@ -1,0 +1,161 @@
+.component-8{
+    width: 100%;
+    height: 1435px;
+    border-top: 1px solid $-white-border;
+    border-bottom: 1px solid $-white-border;
+    margin-top: 100px;
+    background: $-white-background;
+
+    .head{
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 70px;
+
+        p:first-child{
+            font-size: 30px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: $-dark;
+            margin-bottom: 0;
+        }
+
+        p:last-child{
+            color: $-grey-text;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+        
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 270px 270px 270px 270px;
+        grid-template-rows: 540px 540px;
+        gap: 2%;
+        justify-content: center;
+
+        & > div {
+            background-color: $-white;
+            border: 1px solid $-white-border;
+            @include flex(column, center, center);
+
+            .box{
+                width: 100%;
+                height: 270px;
+                background: transparent;
+                border-bottom: 1px solid $-white-border;
+            }
+
+            .person{
+                width: 90%;
+                height: 70px;
+                border-bottom: 1px solid $-white-border;
+
+                p{
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                    letter-spacing: 1px;
+
+                    &:first-child{
+                        color: $-dark;
+                        font-size: 18px;
+                        font-weight: 900;
+                    }
+
+                    &:last-child{
+                        color: $-grey-text;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .footer{
+                width: 90%;
+
+                p{
+                    font-size: 14px;
+                    color: $-grey-text;
+                    line-height: 24px;
+                    letter-spacing: 1px;
+                }
+
+                button{
+                    width: 100%;
+                    height: 40px;
+                    border: 2px solid $-dark;
+                    background: transparent;
+                    border-radius: 5px;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: $-white;
+                        background: $-green;
+                        border-color: $-green;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1280px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: 540px 540px;
+            gap: 2%;
+            justify-content: center;
+    
+            .person p:first-child{
+                font-size: 14px;
+            }
+    
+            .footer{
+                p{
+                    line-height: 21px;
+                }
+    
+                button{
+                    height: 35px;
+                }
+            }
+        }
+        
+    }
+    
+    @media only screen and (max-width: 1025px) {
+        &{
+            height: auto;
+            padding-bottom: 10px;
+    
+            .grid-container {
+                grid-template-columns: 40% 40%;
+                grid-template-rows: 520px 520px 520px;
+                gap: 0;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: 90%;
+            grid-template-rows: auto auto auto auto auto auto auto auto;
+    
+            .footer button{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .head{
+            p:first-child{
+                font-size: 20px;
+            }
+    
+            p:last-child{
+                font-size: 14px;
+            }
+        }
+    }
+}

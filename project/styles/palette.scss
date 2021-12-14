@@ -1,0 +1,23 @@
+$-white: white;
+$-white-border: #ECF0F1;
+$-white-background: #F0F0F0;
+$-grey: #999999;
+$-grey-text: #A1B1BC;
+$-dark: #2C3E50;
+$-dark-border: #304253;
+$-dark-text: #758590;
+$-black: #222533;
+$-green: #1ABC9C;
+$-comp-2-green: #03FBCA;
+$-purple: #4E459A;
+$-cyan: #63D8FF;
+$-cyan-dark: #21C2F8;
+$-red: #E36968;
+
+@mixin dark-bg($-color){
+    background: rgba(34, 37, 51, $-color);
+}
+
+@mixin dark-bg2($-color){
+    background: rgba(26, 28, 39, $-color);
+}

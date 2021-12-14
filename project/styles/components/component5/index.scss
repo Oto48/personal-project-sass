@@ -1,0 +1,169 @@
+.component-5{
+    @include flex(row, flex-start, center);
+    position: relative;
+    height: 845px;
+    p{
+        font-size: 14px;
+        color: $-grey-text;
+        line-height: 24px;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+
+    @for $i from 5 to 10 {
+        p:nth-child(#{$i}){
+            border-bottom: 1px solid $-white-border;
+            margin-bottom: 0px;
+            width: 400px;
+
+            @if $i == 5{
+                margin-top: 30px;
+            }
+
+            i{
+                font-size: 16px;
+                color: $-dark;
+                margin-right: 20px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    div:first-child{
+        width: 35%;
+        margin-top: 70px;
+        margin-right: 40px;
+        height: auto;
+
+        & > p{
+            margin-bottom: 25px;
+        }
+
+        .head{
+            font-size: 30px;
+            font-weight: 900;
+            color: $-dark;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        button{
+            width: 181px;
+            height: 40px;
+            border: 2px solid $-dark;
+            border-radius: 5px;
+            background: transparent;
+            color: $-dark;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+    }
+
+    div:last-child{
+        position: relative;
+        width: 539px;
+    }
+
+    img{
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: 40px;
+        z-index: -1;
+    }
+
+    @media only screen and (max-width: 1580px) {
+        &{
+            height: auto;
+        }
+        div:first-child{
+            width: 35%;
+            height: auto;
+        }
+    }
+
+    @media only screen and (max-width: 1280px) {
+        &{
+            height: auto;
+        }
+        div:first-child{
+            width: 50%;
+            margin-top: 0;
+
+            & > p{
+                margin-bottom: 12px;
+            }
+        }
+        p{
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+
+        img{
+            position: absolute;
+            width: 80%;
+            top: 70px;
+            z-index: -1;
+        }
+        button{
+            margin-bottom: 40px;
+        }
+    }
+
+    @media only screen and (max-width: 1025px) {
+        &{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        div:last-child{
+            width: 100%;
+            position: absolute;
+            height: 500px;
+            bottom: 0;
+        }
+        div:first-child{
+            width: 95%;
+            margin-right: 0;
+        }
+        p{
+            color: $-dark;
+        }
+        div:last-child{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0);
+            z-index: -1;
+        }
+        img{
+            filter: blur(4px);
+        }
+    }
+    
+    @media only screen and (max-width: 768px){
+        div:first-child{
+            margin: auto;
+        }
+        @for $i from 5 to 10 {
+            p:nth-child(#{$i}){
+                border-bottom: 1px solid $-white-border;
+                margin-bottom: 0px;
+                width: 90%;
+            }
+        }
+        .head{
+            font-size: 25px;
+        }
+    }
+
+    @media only screen and (max-width: 480px){
+        .head{
+            font-size: 20px;
+        }
+    }
+    
+}
+
